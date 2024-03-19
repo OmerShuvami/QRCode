@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;700&display=swap");
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  margin: auto;
+  max-width: 400px;
+}
+.image-container {
+  display: grid;
+  place-items: center;
+}
+.image-container img {
+  width: 350px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  height: auto;
+  border-radius: 20px;
+}
+.text-container {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  margin: 18px;
+  color: hsl(218, 44%, 22%);
+  margin-block: auto;
+}
+.text-container h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 0;
+}
+.text-container p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container img{
+        margin-top: 15px;
+    }
+    .container{
+        max-width: 380px;
+    }
+}
